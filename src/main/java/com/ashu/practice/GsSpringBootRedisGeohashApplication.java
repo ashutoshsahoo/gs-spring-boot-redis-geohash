@@ -9,14 +9,14 @@ import org.springframework.data.redis.core.RedisTemplate;
 @SpringBootApplication
 public class GsSpringBootRedisGeohashApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GsSpringBootRedisGeohashApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GsSpringBootRedisGeohashApplication.class, args);
+    }
 
 
-	@Bean
-	public GeoOperations<String,String> geoOperations(RedisTemplate<String,String> template) {
-		return template.opsForGeo();
-	}
+    @Bean
+    public GeoOperations<String, String> geoOperations(RedisTemplate<String, String> template) {
+        return template.opsForGeo();
+    }
 
 }

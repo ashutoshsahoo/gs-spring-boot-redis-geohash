@@ -1,13 +1,10 @@
 package com.ashu.practice.service;
 
 import com.ashu.practice.model.Location;
-import org.springframework.data.geo.Circle;
-import org.springframework.data.geo.Distance;
 import org.springframework.data.geo.*;
-import org.springframework.data.geo.Point;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.GeoOperations;
-import org.springframework.data.redis.domain.geo.*;
+import org.springframework.data.redis.domain.geo.GeoLocation;
 import org.springframework.data.redis.domain.geo.Metrics;
 import org.springframework.stereotype.Service;
 
